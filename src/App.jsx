@@ -5,6 +5,7 @@ import Catagory from './Components/Category'
 import Offers from './Components/Offers'
 import Navtop from './Components/Navtop'
 import Furnitures from './Components/Furnitures'
+import Footer from './Components/Footer'
 
 
 
@@ -21,7 +22,7 @@ function App() {
      <Catagory/>
      <Offers/>
      <Furnitures/>
-
+      <Footer/>
      
     </>
   )
