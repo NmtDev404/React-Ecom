@@ -10,9 +10,9 @@ const Footer = () => {
   return (
     <section>
       <div className="max-w-[1410px] m-auto mt-32">
-        <div className="flex flex-col-reverse xl:flex-row items-center justify-center">
-          <div className="w-full text-center xl:text-start xl:flex  ">
-            <div className=" my-10 xl:w-2/5">
+        <div className="flex flex-col-reverse xl:flex-row max-w-[1200px]:flex-row items-center justify-center">
+          <div className="w-full text-center md:text-center sm:flex sm:justify-center md:flex md:justify-evenly  ">
+            <div className=" my-10 md:w-max sm:">
               <div className="mb-3">
                 <h1 className="text-3xl">Demo</h1>
               </div>
@@ -28,8 +28,8 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="flex xl:flex-row-reverse w-full py-10">
-              <div className="w-1/2 ml-4 xl:w-full">
+            <div className="flex md:flex-row-reverse w-full sm:w-max  sm:content-center sm:justify-evenly md:justify-evenly justify-evenly  py-10">
+              <div className="ml-4 md:w-max ">
                 <div className="mb-3">
                   <h1 className="font-bold">CUSTOMER SERVICES</h1>
                 </div>
@@ -43,7 +43,7 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="w-1/2 ml-5 xl:w-1/3 xl:mx-24">
+              <div className="ml-5 md:w-max md:mr-14">
                 <div className="mb-3">
                   <h1 className="font-bold">ABOUT</h1>
                 </div>
@@ -58,8 +58,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="w-full ml-5 xl:pl-10 xl:pt-14">
-            <div className="text-center xl:text-left">
+          <div className="w-full xl:ml-5 md:pl-10 md:pt-14 sm:w-max md:w-9/12">
+            <div className="text-center md:text-center ">
               <div className="mb-4">
                 <h1 className="font-bold">SIGN UP FOR EMAILS</h1>
               </div>
@@ -83,7 +83,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="icons flex justify-center text-2xl mt-5 sm:my-16 mb-12 xl:justify-start">
+            <div className="icons flex justify-center text-2xl mt-5 sm:my-16 mb-12 md:justify-center">
               <a className="hover:text-red-600">
                 <RiFacebookLine />
               </a>
@@ -101,10 +101,10 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="max-w-[1410px] w-full m-auto flex flex-col sm:flex-row content-center justify-center text-center xl:justify-between px-5 py-10">
+      <div className="max-w-[1410px] w-full m-auto flex flex-col sm:flex-row content-center justify-center text-center md:justify-between px-5 py-10">
         <div className=" flex flex-col md:flex-row content-center justify-center text-center w-full">
-          <div className="flex sm:flex-row-reverse justify-center xl:justify-normal w-full">
-            <div className=" mb-2 text-[15px] text-[#848484] xl:pl-10">
+          <div className="flex sm:flex-row-reverse justify-center md:justify-normal w-full">
+            <div className=" mb-2 text-[15px] text-[#848484] md:pl-10">
               <p>© Demo. All Rights Reserved.</p>
             </div>
             <div className="text-[15px] text-[#887474]">
@@ -120,7 +120,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className=" flex justify-center content-center pt-2 mt-3 xl:mt-0 xl:pt-0 w-full">
+          <div className=" flex justify-center content-center pt-2 mt-3 md:mt-0 md:pt-0 w-full">
             <a>
               <img src={Payment} />
             </a>
