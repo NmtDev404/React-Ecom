@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
 
           <div className="w-full xl:ml-5 md:pl-10 md:pt-14 sm:w-max md:w-9/12">
-            <div className="text-center md:text-center ">
+            <div className="text-center md:text-center px-5 md:px-0 xl:px-0 ">
               <div className="mb-4">
                 <h1 className="font-bold">SIGN UP FOR EMAILS</h1>
               </div>

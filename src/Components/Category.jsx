@@ -25,7 +25,7 @@ const Cetagory= () => {
       
         </div>
 
-      <div className='card m-auto flex pt-10 '>
+      <div className='max-w-[1410px] m-auto grid grid-cols-2 pt-10 '>
 
 
           <Cards proName = 'Lights'

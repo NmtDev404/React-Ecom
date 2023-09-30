@@ -6,6 +6,7 @@ import Offers from './Components/Offers'
 import Navtop from './Components/Navtop'
 import Furnitures from './Components/Furnitures'
 import Footer from './Components/Footer'
+import Filter from './Components/Filter'
 
 
 
@@ -23,6 +24,7 @@ function App() {
      <Offers/>
      <Furnitures/>
       <Footer/>
+      <Filter/>
      
     </>
   )

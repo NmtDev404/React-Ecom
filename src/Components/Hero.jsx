@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className='bg-[#f2f2f2]'>
 
-      <div className='grid grid-cols-2 sm:grid-flow-row px-[80px] tracking-wider max-w-[1480px] m-auto '>
+      <div className='grid grid-cols-2 sm:grid-flow-row px-5 tracking-wider max-w-[1480px] m-auto '>
 
       <div className='flex flex-col justify-center '>
       <p className='pb-5 text-[16px]  xl:text-[16px]  md:text-base  sm:text-sm'>SALE OFF 30%</p>
@@ -19,7 +19,7 @@ const Hero = () => {
       </div>
    
       <div className='flex justify-end pt-10'>
-        <img src={Lamp} className='w-[85%] animate-Float'/>
+        <img src={Lamp} className='animate-Float'/>
       </div>
 
       </div>

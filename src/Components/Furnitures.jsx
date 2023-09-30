@@ -9,12 +9,12 @@ const [items,setItems] = useState(Data)
 
 <div className=" max-w-[1480px] m-auto mt-20 ">
         <div>
-        <h2 className='text-3xl font-bold'>Best Modern Furniture</h2>
+        <h2 className='text-xl md:text-3xl font-bold pl-7 '>Best Modern Furniture</h2>
       </div> 
       
       </div>
 
-<div className=" max-w-[1480px] m-auto mt-12 content-center justify-center items-center grid grid-cols-4 p-5 " >
+<div className=" max-w-[1480px] m-auto mt-12 content-center justify-center items-center grid grid-cols-2  xl:grid-cols-4 md:grid-cols-3 p-5 " >
 
       {
         items.map((elements)=>{
@@ -59,7 +59,7 @@ const [items,setItems] = useState(Data)
 
 </div>
 
-<div className=" max-w-[1480px] m-auto mt-12 content-center justify-center items-center grid grid-cols-4 p-5 " >
+<div className=" max-w-[1480px] m-auto mt-12 content-center justify-center items-center grid grid-cols-2  xl:grid-cols-4 md:grid-cols-3 p-5  " >
 
       {
         items.map((elements)=>{

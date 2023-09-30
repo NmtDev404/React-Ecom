@@ -64,7 +64,7 @@ body {
 
 
 .Border-animationtwo:hover::after,
-.Border-animationtwo::before::before{
+.Border-animationtwo:hover:before{
   border-color: #f2f2f2;
   width: 100%;
   height: 100%;
