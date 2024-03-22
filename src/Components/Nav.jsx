@@ -6,6 +6,8 @@ import { PiHeartStraightLight,PiShoppingCartThin } from "react-icons/pi";
 import { TfiClose } from "react-icons/tfi";
 import Navtop from "./Navtop";
 import { CiUser } from "react-icons/ci";
+import { Link } from "react-router-dom";
+
 
 const Nav = () => {
   const [isNavVisible, setIsNavVisible] = useState(false);
@@ -40,11 +42,7 @@ const Nav = () => {
         </div>
       </div>
 
-      <div>
-        <Navtop />
-      </div>
-
-      <div className="mNav max-w-[1400px] bg-transparent m-auto sticky top-0 w-full z-20 ">
+      <div className="mNav max-w-[1400px] bg-transparent m-auto sticky top-0  z-20 ">
         <div className=" m-auto py-[15px] px-[30px]   flex items-center justify-between">
           <div>
             <ul className="flex list-none text-[24px] ml-10 gap-8">
@@ -61,16 +59,16 @@ const Nav = () => {
             </ul>
           </div>
 
-          <div className="font-light text-5xl">
-            <h1>Demo</h1>
+          <div className="font-light cursor-pointer text-5xl">
+           <Link to="/"><h1>Demo</h1></Link>
           </div>
 
           <div>
             <ul className="flex m-auto list-none text-[24px]">
-              <li className="p-4">
-                <a>
+              <li className="p-4 cursor-pointer">
+                <Link to="/login">
                   <CiUser />
-                </a>
+                </Link>
               </li>
               <li className="p-4">
                 <a>

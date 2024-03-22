@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from './Button';
 import { useForm } from 'react-hook-form';
+import { Link } from 'react-router-dom';
 
 const LoginForm = () => {
   const {
@@ -15,14 +16,21 @@ const LoginForm = () => {
 
   return (
     <>
+
+<div className='flex justify-center items-center gap-4 pt-10 pr-16'>
+        <Link to="/"><span>Home</span></Link>
+        <span>/</span>
+        <Link to="/signup"><span>Sign up</span></Link>
+    
+    </div>
       <div>
         <div
           id="main-container"
-          className=" max-w-[1440px ] my-16  bg-white m-auto flex flex-col md:flex-row items-center justify-center p-6 gap-5  "
+          className=" max-w-[1440px ] mt-10 bg-white m-auto flex flex-col md:flex-row items-center justify-center gap-5  "
         >
         
 
-          <div id="form-container" className=" w-full lg:w-[50%] md:w-[50%] grid items-center justify-center lg:left-[3%] relative">
+          <div id="form-container" className=" w-full lg:w-[50%] md:w-[50%] grid items-center justify-center relative">
             <div>
               <h1 className="text-4xl font-bold block ">Sign in</h1>
             </div>

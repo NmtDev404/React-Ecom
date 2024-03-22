@@ -1,39 +1,33 @@
-import React from 'react'
-import Nav from './Components/Nav'
-import Hero from './Components/Hero'
-import Catagory from './Components/Category'
-import Offers from './Components/Offers'
-import Navtop from './Components/Navtop'
-import Furnitures from './Components/Furnitures'
-import Footer from './Components/Footer'
-import Myaccount from './Components/Myaccount'
-
-
-
-
-
+import React from "react";
+import Myaccount from "./Components/Myaccount";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Layouts/Home";
+import LoginPage from "./Layouts/LoginPage";
+import SignupPage from "./Layouts/SignupPage";
 
 function App() {
-  
-
   return (
-    <div >
-    {/* <div className='home'>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<LoginPage/>} />
+          <Route path="/signup" element={<SignupPage/>} />
+        </Routes>
+      </BrowserRouter>
+
+      {/* <div className='home'>
       <Nav/> 
      <Hero/>
      <Catagory/>
      <Offers/>
      <Furnitures/>
       <Footer/>
-    </div> */}
-     <Myaccount/>
-      
-     
     </div>
-
-
-
-  )
+     <Myaccount/>
+       */}
+    </>
+  );
 }
 
-export default App
+export default App;

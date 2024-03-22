@@ -2,8 +2,9 @@ import React from "react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
-const Form = () => {
+const SignupForm = () => {
   const {
     register,
     handleSubmit,
@@ -23,17 +24,17 @@ const Form = () => {
   return (
     <>
       <div>
+      <div className='flex justify-center items-center gap-4 pt-10 pr-16'>
+        <Link to='/'><span>Home</span></Link>
+        <a><span>/</span></a>
+        <Link to='/login'><span>Sign in</span></Link>
+        
+    </div>
         <div
           id="main-container"
           className=" max-w-[1440px ] max-w-[90%] my-16  bg-white m-auto flex flex-col md:flex-row items-center justify-center p-6 gap-5  "
         >
-          {/* <div className="hidden lg:block md:block w-[50%]">
-            <img
-              src={Background}
-              className="w-auto h-full rounded-[20px]"
-              alt="Background"
-            />
-          </div> */}
+       
 
           <div id="form-container" className=" w-full lg:w-[50%] md:w-[50%]">
             <div>
@@ -246,4 +247,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default SignupForm;
