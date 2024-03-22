@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter';
+}
+
+
+.Border-animation::before{
+  content:"" ;
+  position:absolute ;
+  left: 0;
+  top:0;
+  height:0;
+  border:cyan;
+  width: 0;
+  border-left: 1px solid transparent;
+  border-top: 1px solid transparent;
+  transition:all .6s ease;
+  box-sizing: border-box;
+
+}
+.Border-animation:hover::after,
+.Border-animation:hover::before{
+  border-color: #000;
+  width: 100%;
+  height: 100%;
+
+}
+
+.Border-animation::after{
+  content:"" ;
+  position:absolute ;
+  right: 0;
+  bottom:0;
+  height:0;
+  border:cyan;
+  width: 0;
+  border-right: 1px solid transparent ;
+  border-bottom: 1px solid transparent;
+  transition:all .6s ease;
+  box-sizing: border-box;
+
+}
+
+/* ....................... */
+
+.Border-animationtwo::before{
+  content:"" ;
+  position:absolute ;
+  left: 0;
+  top:0;
+  height:0;
+  border:cyan;
+  width: 0;
+  border-left: 1px solid transparent;
+  border-top: 1px solid transparent;
+  transition:all .6s ease;
+  box-sizing: border-box;
+
+}
+
+
+.Border-animationtwo:hover::after,
+.Border-animationtwo:hover:before{
+  border-color: #f2f2f2;
+  width: 100%;
+  height: 100%;
+
+}
+
+.Border-animationtwo::after{
+  content:"" ;
+  position:absolute ;
+  right: 0;
+  bottom:0;
+  height:0;
+  border:cyan;
+  width: 0;
+  border-right: 1px solid transparent ;
+  border-bottom: 1px solid transparent;
+  transition:all .6s ease;
+  box-sizing: border-box;
+
+}
+
